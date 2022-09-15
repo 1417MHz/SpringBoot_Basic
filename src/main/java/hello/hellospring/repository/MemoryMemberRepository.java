@@ -41,4 +41,9 @@ public class MemoryMemberRepository implements MemberRepository {
         // store 속에 있는 Member들을 전부 ArrayList 타입으로 변환하여 반환
         return new ArrayList<>(store.values());
     }
+
+    // 매번 테스트 메소드가 종료될 때마다 repository 속 객체를 클리어 해줌
+    public void clearStore() {
+        store.clear();
+    }
 }
