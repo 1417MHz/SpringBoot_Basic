@@ -29,6 +29,10 @@ class MemberServiceTest {
         memberRepository.clearStore();
     }
 
+    // given = 어떠한 데이터가 주어졌을 때
+    // when = 어떠한 것을 실행했을 때(검증 파트)
+    // then = 이러한 결과가 나와야 한다
+
     @Test
     void join() {
         // given
