@@ -2,4 +2,4 @@
 <hr/>
 <p>사지방에서 스프링 부트 공부하기:grimacing:</p>
 <p>IDE : IntelliJ IDEA</p>
-<p>DB : MySQL 8.0.28</p>
+<p>DB : H2 DB 1.4.200</p>
