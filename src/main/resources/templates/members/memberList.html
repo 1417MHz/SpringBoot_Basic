@@ -11,10 +11,14 @@
       </tr>
       </thead>
       <tbody>
+
+      <!-- Model 안에 있는 값을 꺼내(리스트로 담겨있는 회원 목록이 넘어옴) member에 담음 -->
+      <!-- th:each = 데이터를 모두 꺼내도록 루프를 돌림 -->
       <tr th:each="member : ${members}">
         <td th:text="${member.id}"></td>
         <td th:text="${member.name}"></td>
       </tr>
+
       </tbody>
     </table>
   </div>

@@ -30,6 +30,8 @@ public class MemberController {
         Member member = new Member();
         member.setName(form.getName());
 
+        // soutv + TAB == System.out.println() 자동 작성
+
         memberService.join(member);
 
         return "redirect:/";
@@ -39,6 +41,9 @@ public class MemberController {
     @GetMapping("/members")
     public String list(Model model) {
         List<Member> members = memberService.findMembers();
+        // .addAttribute(String name, Object value)
+        // value 객체를 name 이름으로 추가한다.
+        // view 코드에서는 name으로 지정한 이름을 통해서 value를 사용한다 예) members.name
         model.addAttribute("members", members);
         return "members/memberList";
     }
