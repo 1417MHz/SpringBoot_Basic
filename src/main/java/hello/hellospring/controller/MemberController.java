@@ -43,7 +43,7 @@ public class MemberController {
         List<Member> members = memberService.findMembers();
         // .addAttribute(String name, Object value)
         // value 객체를 name 이름으로 추가한다.
-        // view 코드에서는 name으로 지정한 이름을 통해서 value를 사용한다 예) members.name
+        // view 코드에서는 name으로 지정한 이름을 통해서 value를 사용한다
         model.addAttribute("members", members);
         return "members/memberList";
     }
